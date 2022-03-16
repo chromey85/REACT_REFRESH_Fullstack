@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #7520bb;
+  padding: 20px;
+  border-bottom: lightgray solid 1px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+#sm_logo {
+  height: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#user_management {
+  width: 30px;
+}
+
+.icon {
+  width: 29px;
+}
+
+body {
+  background: url(https://images2.alphacoders.com/101/1017005.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.post_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo-container img {
+  display: flex;
+  max-width: 100%;
+  /* height: auto; */
+  width: auto;
+  height: 300px;
+  border-radius: 0.375rem;
+  margin-bottom: 25px;
+}
+
+.photo-container {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(59, 32, 15, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-bottom: 25px;
+}
+
+modal {
+  position: absolute;
+  inset: 250px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 147px;
+  outline: none;
+  padding: 113px;
 }
